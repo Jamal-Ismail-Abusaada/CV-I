@@ -1,0 +1,135 @@
+
+.footer {
+    height: 680px;
+    background-color: #021527;
+    text-align: center;
+}
+
+.form {
+    width: 479px;
+}
+
+.footer-h1-2 {
+    font-size: 55px;
+    color: white;
+    width: 350px;
+}
+
+.footer-dh {
+    margin-left: -100px;
+    width: 500px;
+}
+
+.footer-p {
+    color: rgb(214, 214, 214);
+    width: 500px;
+}
+
+.container {
+    background-color: #021527;
+}
+
+.footer-h1 {
+    font-size: 55px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.footer-me {
+    font-size: 55px;
+    color: #0abdf8;
+}
+
+.footer-div {
+    margin-bottom: 35px;
+    display: flex;
+
+}
+
+.footer-div-1 {
+    background-color: #212429;
+    height: 80px;
+    width: 49%;
+    border: none;
+}
+.footer-div-2 {
+    margin-left: 26px;
+    background-color: #212429;
+    height: 80px;
+    width: 49%;
+    border: none;
+}
+
+.footer-div-3 {
+    background-color: #212429;
+    height: 80px;
+    width: 49%;
+    border: none;
+}
+.footer-div-4 {
+    margin-left: 26px;
+    background-color: #212429;
+    height: 80px;
+    width: 49%;
+    border: none;
+}
+
+.last-footer {
+    height: 260px;
+    background-color: #212429;
+    border: none;
+    width: 100%;
+}
+
+.footer-button {
+    padding: 15px 55px;
+    border-color: #0abdf8;
+    border-radius: 50px;
+    color: #ffffff;
+    z-index: 1;
+    margin: 0px;
+    background-color: #0abdf8;
+    position: relative;
+    font-weight: 1000;
+    font-size: 17px;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    transition: all 250ms;
+    overflow: hidden;
+}
+
+.footer-button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 50px;
+    background: #02192f;
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    transition: all 250ms
+}
+
+.footer-button:hover {
+    color: #e8e8e8;
+}
+
+.footer-button:hover::before {
+    width: 100%;
+}
+
+@media(min-width:0) and (max-width:992px) {
+    .footer-dh {
+        margin-left: 0px;
+        margin-bottom: 30px;
+    }
+    .footer-h1-2 {
+        text-align: center;
+        margin: auto;
+    }
+}

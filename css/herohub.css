@@ -1,0 +1,73 @@
+.herohub {
+    display: flex;
+    height: 680px;
+    background-color: #02192f;
+}
+
+.herohub-div {
+    color: rgb(255, 255, 255);
+    margin-left: 100px;
+    margin-top: 180px;
+}
+
+.herohub-img {
+    width: 550px;
+    height: 550px;
+    margin-left: 185px;
+    margin-top: 60px;
+    border-radius: 35px;
+}
+
+.herohub-h1 {
+    font-weight: bold;
+    font-size: 55px;
+    color: rgba(255, 255, 255, 0.851);
+}
+
+.herohub-h2 {
+    font-weight: bold;
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+@media(min-width:0) and (max-width:900px) {
+    .herohub {
+        display: table-row;
+        height: 250px;
+        width: 500px;
+    }
+    .herohub-div {
+        margin-left: 30px;
+        margin-top: 130px;
+        margin-bottom: 50px;
+    }
+    .herohub-h6 {
+        width: 400px;
+    }
+    .div-herohub-img {
+        visibility: hidden;
+        height: 0px;
+    }
+    .herohub-img {
+        visibility: hidden;
+    }
+}
+
+@media(min-width:900px) and (max-width:1200px) {
+    .herohub {
+        display: flex;
+        height: 630px;
+    }
+    .herohub-div {
+        margin-left: 30px;
+        width: 50%;
+        margin-top: 100px;
+        margin-right: 0px;
+    }
+    .herohub-img {
+        width: 450px;
+        height: 450px;
+        margin-left: 0px;
+        margin-top: 60px;
+    }
+}

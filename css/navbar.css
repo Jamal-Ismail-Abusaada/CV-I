@@ -1,0 +1,146 @@
+
+.container-fluid {
+    background-color: #021527;
+    color: white;
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+.nav-span {
+    color: #35acd9;
+    font-size: 40px;
+}
+
+.navbar-brand {
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: bold;
+    margin-left: 120px;
+}
+
+.navbar-brand:hover {
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.nav-link {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 25px;
+}
+
+.nav-link:hover {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.navbar {
+    padding: 0px;
+}
+
+.button {
+    padding: 10px 50px;
+    border: unset;
+    border-radius: 5px;
+    color: #ffffff;
+    z-index: 1;
+    margin: 30px;
+    margin-left: 0px;
+    margin-right: 100px;
+    background: #d81358;
+    position: relative;
+    font-weight: bold;
+    font-size: 17px;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(255, 255, 255, 0.400);
+    box-shadow: 4px 8px 19px -3px rgba(255, 255, 255, 0.400);
+    transition: all 250ms;
+    overflow: hidden;
+}
+
+.button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 5px;
+    background-color: #02192f;
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(255, 255, 255, 0.400);
+    box-shadow: 4px 8px 19px -3px rgba(255, 255, 255, 0.400);
+    transition: all 250ms
+}
+
+.button:hover {
+    color: #56d2ff;
+}
+
+.button:hover::before {
+    width: 100%;
+}
+
+
+@media(min-width:0) and (max-width:600px) {
+    .button {
+        margin-right: 5px;
+    }
+    .navbar-toggler {
+    margin-left: 423px;
+    position: absolute;
+    color: white;
+    }
+    .navbar-brand {
+        color: #ffffff;
+        font-size: 40px;
+        font-weight: bold;
+        margin-left: 5px;
+    }
+}
+
+@media(min-width:600px) and (max-width:992px) {
+    .button {
+        border-radius: 5px;
+        padding: 10px 50px;
+        background-color: #d81358;
+        border: none;
+        color: white;
+        font-size: 15px;
+        margin-right: 50px;
+    }
+    .navbar-brand {
+        color: #ffffff;
+        font-size: 40px;
+        font-weight: bold;
+        margin-left: 15px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .button {
+        border-radius: 5px;
+        padding: 10px 50px;
+        background-color: #d81358;
+        border: none;
+        color: white;
+        font-size: 15px;
+        margin-right: 25px;
+    }
+    .navbar-brand {
+        color: #ffffff;
+        font-size: 40px;
+        font-weight: bold;
+        margin-left: 30px;
+    }
+    .nav-link {
+        color: #ffffff;
+        font-size: 15px;
+        font-weight: bold;
+        margin-left: 15px;
+    }
+}
