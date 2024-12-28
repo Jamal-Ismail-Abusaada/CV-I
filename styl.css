@@ -8,4 +8,6 @@
 
 body {
     background-color: #021527;
+    transform: scale(0.9);
+    transform-origin: top left;
 }
