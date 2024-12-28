@@ -3,6 +3,7 @@
     height: 680px;
     color: white;
     background-color: #021527;
+    width: 1483px;
 }
 
 .my-serves-h1 {
@@ -53,6 +54,10 @@
 @media(min-width:0) and (max-width:900px) {
     .my-serves {
         height: 1600px;
+        text-align: left;
+    }
+    .my-serves-h1 {
+        margin-left: 135px;
     }
     .my-serves-div {
         display: table-row;

@@ -3,6 +3,7 @@
     background-color: #021527;
     height: 120px;
     display: flex;
+    width: 1483px;
 }
 
 .hub-div {
@@ -95,7 +96,11 @@
     .hub {
         background-color: #02192f;
         height: 185px;
+        width: 500px;
         display: table-row;
+    }
+    .hub-d {
+        width: 100%;
     }
     .hub-br {
         height: 1px;

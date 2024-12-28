@@ -2,6 +2,7 @@
 .container-fluid {
     background-color: #021527;
     color: white;
+    width: 100%;
 }
 
 .navbar-nav {
@@ -41,6 +42,7 @@
 
 .navbar {
     padding: 0px;
+    width: 1483px;
 }
 
 .button {
