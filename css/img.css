@@ -16,6 +16,7 @@
     font-size: 55px;
     color: white;
     margin-bottom: 30px;
+    text-align: center;
 }
 
 .img-span {
@@ -50,6 +51,7 @@
 @media(min-width:0) and (max-width:900px) {
     .img {
         height: 400px;
+        width: 110%;
     }
     .img-1 {
         width: 150px;
