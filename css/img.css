@@ -1,96 +1,47 @@
-
+/* Project gallery */
 .img {
-    height: 700px;
-    background-color: #02192f;
+    background: var(--surface);
     text-align: center;
-    margin-bottom: 100px;
-    width: 1483px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
 }
-
-.img-div {
-    display: flex;
-    margin-left: 200px;
-}
-
 .img-h1 {
-    font-size: 55px;
-    color: white;
-    margin-bottom: 30px;
-    text-align: center;
+    font-size: var(--section-title-size);
+    margin-bottom: calc(var(--heading-space) - 24px);
+    grid-column: 1 / -1;
 }
-
+.project-frame {
+    display: grid;
+    place-items: center;
+    aspect-ratio: 4 / 3;
+    padding: 12px;
+    margin: 0;
+    overflow: hidden;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+}
 .img-span {
-    font-size: 55px;
-    color: #0abdf8;
-    margin: auto;
+    color: var(--accent);
 }
-
-.img-1 {
-    width: 350px;
-    height: 275px;
-    margin: 8px;
-    border-radius: 5px;
+.img-div {
+    display: contents;
 }
-
-.img-2 {
-    width: 350px;
-    height: 235px;
-    margin: 8px;
-    border-radius: 5px;
-    margin-bottom: 100px;
+.img-1, .img-2, .img-3 {
+    width: 100%;
+    height: 100%;
+    min-height: 0;
+    object-fit: contain;
+    border-radius: 8px;
 }
-
-.img-3 {
-    width: 350px;
-    height: 190px;
-    margin: 8px;
-    border-radius: 5px;
-    margin-bottom: 100px;
-}
-
-@media(min-width:0) and (max-width:900px) {
+@media (min-width: 576px) and (max-width: 991px) {
     .img {
-        height: 400px;
-        width: 110%;
-    }
-    .img-1 {
-        width: 150px;
-        height: 130px;
-        margin: 8px;
-        border-radius: 5px;
-    }
-    .img-2 {
-        width: 150px;
-        height: 120px;
-    }
-    .img-3 {
-        width: 150px;
-        height: 110px;
-    }
-    .img-div {
-        margin-left: 20px;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 }
-
-@media(min-width:900px) and (max-width:1200px) {
+@media (max-width: 575px) {
     .img {
-        height: 680px;
-    }
-    .img-1 {
-        width: 250px;
-        height: 175px;
-        margin: 8px;
-        border-radius: 5px;
-    }
-    .img-2 {
-        width: 250px;
-        height: 155px;
-    }
-    .img-3 {
-        width: 250px;
-        height: 140px;
-    }
-    .img-div {
-        margin-left: 90px;
+        grid-template-columns: 1fr;
     }
 }

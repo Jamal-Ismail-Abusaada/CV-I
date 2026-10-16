@@ -1,0 +1,15 @@
+# Local browser sessions, screenshots and review scripts.
+.playwright-cli/
+output/
+.publish/
+
+# Local dependencies and operating system files.
+node_modules/
+__pycache__/
+.DS_Store
+Thumbs.db
+
+# Local credentials and environment overrides.
+.env
+.env.*
+!.env.example

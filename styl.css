@@ -1,14 +1,157 @@
-@import url(css/hero.css);
-@import url(css/herohub.css);
-@import url(css/hub.css);
-@import url(css/navbar.css);
-@import url(css/my-servises.css);
-@import url(css/img.css);
-@import url(css/footer.css);
-
-body {
-    background-color: #021527;
-    transform: scale(0.9);
-    transform-origin: top left;
+/* Shared theme and accessible controls. Section styles load after this file. */
+:root {
+    --background: #ffffff;
+    --surface: #f0f6f8;
+    --card: #ffffff;
+    --field: #f8fafc;
+    --accent: #077580;
+    --accent-hover: #065f6b;
+    --text: #14263d;
+    --text-muted: #475569;
+    --border: #d6e2e8;
+    --field-border: #7b8fa1;
+    --disabled-background: #e6edf2;
+    --disabled-text: #475569;
+    --content-width: 1180px;
+    --page-gutter: clamp(20px, 4vw, 40px);
+    --section-space: clamp(48px, 6vw, 88px);
+    --heading-space: clamp(28px, 4vw, 44px);
+    --section-title-size: clamp(30px, 3.5vw, 46px);
+    --radius: 16px;
 }
-/* <input></input> */
+
+html {
+    color-scheme: light;
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    background: var(--background);
+    color: var(--text);
+    line-height: 1.6;
+}
+main section {
+    padding: var(--section-space) max(var(--page-gutter), calc((100% - var(--content-width)) / 2));
+    scroll-margin-top: 24px;
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+h1, h2, h3 {
+    color: var(--text);
+    line-height: 1.2;
+    text-wrap: balance;
+    letter-spacing: -0.025em;
+}
+p {
+    color: var(--text-muted);
+    overflow-wrap: break-word;
+}
+.hero-h6, .herohub-h6, .footer-h6 {
+    max-width: 52ch;
+    line-height: 1.75;
+}
+.hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 16px;
+    margin-top: 24px;
+}
+.hero-actions .hero-button {
+    margin: 0;
+}
+a {
+    text-decoration: none;
+}
+a, button {
+    touch-action: manipulation;
+}
+a:focus-visible, button:focus-visible, input:focus-visible {
+    outline: 3px solid var(--accent);
+    outline-offset: 5px;
+}
+button:disabled {
+    cursor: not-allowed;
+    opacity: 1;
+    background: var(--disabled-background);
+    color: var(--disabled-text);
+    border-color: var(--border);
+}
+.skip-link {
+    position: absolute;
+    left: 16px;
+    top: 0;
+    z-index: 10;
+    padding: 12px;
+    background: var(--text);
+    color: var(--background);
+    transform: translateY(-120%);
+}
+.skip-link:focus {
+    transform: translateY(0);
+}
+.hero-button, .hero-button-2, .button {
+    display: inline-block;
+    min-height: 44px;
+    text-align: center;
+    padding: 12px 28px;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-weight: 700;
+    transition: background-color 200ms, color 200ms;
+}
+.hero-button {
+    margin: 24px 16px 0 0;
+    background: var(--accent);
+    color: var(--background);
+}
+.hero-button:hover {
+    background: var(--accent-hover);
+    color: var(--background);
+}
+.hero-button-2 {
+    background: var(--surface);
+    border-color: var(--accent);
+    color: var(--accent);
+}
+.hero-button-2:hover {
+    background: var(--accent);
+    color: var(--background);
+}
+.hero-icon, .herohub-icon {
+    display: flex;
+    gap: 8px;
+    margin-top: 20px;
+}
+.hero-icon a, .herohub-icon a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    color: var(--accent);
+    border: 1px solid var(--border);
+    border-radius: 50%;
+}
+.hero-icon a:hover, .herohub-icon a:hover {
+    color: var(--accent-hover);
+}
+.fac {
+    width: 25px;
+    height: 25px;
+}
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+    *, *::before, *::after {
+        transition: none !important;
+    }
+}
